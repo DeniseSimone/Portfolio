@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Denise Simone Portfolio Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" 
+        content="Hello! My name's Denise, I'm a frontend developer based in Lisbon.
+        Welcome to my personal website. I work with HTML, CSS, Javascript ..." 
+    />
+    <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, portfolio, website, react, developer, frontend developer, junior" />
+    <meta name="author" content="Denise Simone" />
+    <!-- Add page icon -->
+    <link rel="icon" type="images/jpg" href="images/Frame 1.png" sizes="16x16" />
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background: #000;">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">DeniseSimone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ><i id="menu" class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <i class="fas fa-home"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About <i class="fas fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio <i class="fas fa-book-open"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact <i class="fas fa-phone"></i></a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+     <!-- main banner -->
+     <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Denise</h2>
+                <p class="hero_desc">I am a frontend developer in Lisbon </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4" style="color: #fff;">
+            <h1 class="text-center">About Me <i class="fas fa-user"></i></h1>
+            <div class="row mt-4">
+                <div class="col-lg-4 imgdiv" style="text-align: center;">
+                    <img src="images/profile2.jpg" class="imageAboutPage" alt="Denise Simone" >
+                </div>
+
+                <div class="col-lg-8" style="text-align: justify;">
+                    <p>Hello, I'm Denise! I am a frontend developer located in Lisbon, partially self-taught topped with a
+                      Web Development bootcamp. 
+                    <br>
+                    <!-- Also feel free to call me Simone, my second name <i class="fas fa-smile-beam"></i><br> -->
+                    I really enjoy working with frontend and designing web pages, and I'm always ready for a new adventure.<br>
+                    Want to know how I work, take a look at my <a href="#portfolio">portfolio</a>.
+                    </p>
+                    <h5>Skills</h5>
+                    <div class="row mt-3">
+                        <div class="col-md-5">
+                            <ul style="text-align: left;">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Responsive Web Design</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">  
+                            <ul style="text-align: left;"> 
+                                <li>JavaScript</li> 
+                                <li>React</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <h5>A bit more about me ...</h5>
+                    <p>I'm an adventurer by nature so some of my favourite hobbies are travelling, meeting new people, experiencing new cultures, hiking,
+                         camping and my number one hobby <i class="fas fa-arrow-right"></i> laying under the stars <i class="fas fa-star" style="color: goldenrod;"></i></p>
+                    <p>You'd like to partner?!! Then let's have a drink and talk about new and exciting projects <i class="fas fa-star" style="color: goldenrod;"></i></p>
+                </div>
+            </div>
+    </section>
+    
+
+     <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center" style="color: #fff;">Portfolio <i class="fas fa-book-open"></i></h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/entertainment_app.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Entertainment Hub</h4>
+                            <!-- <p class="card-text">Entertainment Hub is a entertainment app that allows the user to search for  movies and/or tv series of different genres and categories. 
+                                It allows the user to see what is trending at the moment, and info related to each movie or tv series.
+                                Entertainment Hub fetches data from a 'movies' API which is then processed and displayed to the user.</p> -->
+                            <p>Netflix like entertainment app that allows to search for movies or series from different categories/genres. Check the info related to the movie/tv series or your choice and/or watch the trailer.</p>
+                            <div class="text-center">
+                                <a href="https://entertainment-hub-ds.netlify.app" target="_blank" class="btn">Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/quiz_app.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Quiz App</h4>
+                            <!-- <p class="card-text">Quiz App is a simple app built with HTML, CSS and JavaScript and allows the user to play a quiz game by selecting a single option
+                                in a set of options. For each correct answer the user gets a number of points which will then be summed to a total. The user can resart the game and play as many
+                                times ah he/she wishes.
+                            </p> -->
+                            <p>A simple quiz app using Javascript.</p>
+                            <div class="text-center">
+                                <a href="#" target="_blank" class="btn">Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/todo_list_app.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Todo List</h4>
+                            <!-- <p class="card-text">Todo List allows the user to create or add new tasks to a list of tasks, edit the tasks,
+                                 mark them as completed or active(in progress) and/or discard whatever tasks the user wishes.</p> -->
+                            <p>Create, add, edit or delete tasks from a todo list. Mark tasks as completed or active/in progress.</p>
+                            <div class="text-center">
+                                <a href="https://todo-list-ds.netlify.app" target="_blank" class="btn">Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/weather_app.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Weather API App</h4>
+                            <!-- <p class="card-text">Weather app collects weather related data associated with the users location and time - such as current temperature in Celsius and Fahrenheit ,
+                                 sunrise and sunset - from a weatherAPI and displays it to the user.</p> -->
+                            <p>Collect weather related data from Weather API and display it to the user. </p>
+                            <div class="text-center">
+                                <a href="https://dsweatherapp.netlify.app" target="_blank" class="btn">Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Twitter Clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="text-center">
+                                <a href="#p" target="_blank" class="btn">Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/blog_app.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Blog App</h4>
+                            <p class="card-text">Simple, clean design with a responsive layout.</p>
+                            <div class="text-center">
+                                <a href="https://living-the-simple-life-ds.netlify.app" target="_blank" class="btn">Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <div class="container mt-3">
+            <h1 class="text-center">Get in Touch <i class="fas fa-user-friends"></i></h1>
+            <div class="form" style="display: flex; flex-direction: column; justify-content: center;">
+                <form action="https://formspree.io/f/xbjwadvl" method="POST" id="my-form">
+                    <div class="input">
+                        <label for="first_name">First Name *</label><br>
+                        <input type="text" name="first_name" id="first_name" placeholder="John" required><br>
+                    </div>
+                    <div class="input">
+                        <label for="last_name">Last Name *</label><br>
+                        <input type="text" name="last_name" id="last_name" placeholder="Doe" required><br>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email *</label><br>
+                        <input type="email" name="email" id="email" placeholder="john_doe@email.com" required><br>
+                    </div>
+                    <div class="input">
+                        <label for="cellphone">Cellphone <span style="font-size: .8rem;">(Please enter country code)</span></label><br>
+                        <input type="tel" name="cellphone" id="cellphone" placeholder="+351 111 111 111"><br>
+                    </div>
+                    <div class="input">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="7" placeholder="Leave a message"></textarea>
+                    </div> 
+                    <button type="submit" class="btn">Send</button>
+                    <p id="my-form-status" style="margin-top: 20px; margin-bottom: 0;"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer style="padding: 10px">
+        <div class="footer-content">
+            <h5>Personal Portfolio Website <i class="fas fa-book-open"></i></h5>
+            Connect with me...
+            <ul class="socials">
+                <li><a href="https://wa.me/+351925724703" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="https://github.com/DeniseSimone" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/denisecustodio/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+             </ul>
+             <p style="margin: 10px auto 0">copyright &copy;2022 <a href="#">DeniseSimone</a>  </p>
+        </div>
+    </footer>
+
+
+
+    <!-- load javascript after loading all html content -->
+    <script>
+        // add class navbarDark on navbar scroll
+        const header = document.querySelector('.navbar');
+
+        window.onscroll = function() {
+            var top = window.scrollY;
+            if(top >=100) {
+                header.classList.add('navbarDark');
+                document.getElementById('menu').style.color = 'white';
+            }
+            else {
+                header.classList.remove('navbarDark');
+                document.getElementById('menu').style.color = 'black';
+            }
+        }
+
+        // form
+
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+            status.innerHTML = "Thanks for your submission!";
+            form.reset()
+            } else {
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+            })
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+
+</body>
+</html>
