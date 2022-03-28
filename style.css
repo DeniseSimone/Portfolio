@@ -60,6 +60,7 @@ span.navbar-toggler-icon {
 .imageAboutPage {
     width: 80%;
     border-radius: 150px 40px 150px 40px;
+    border: 2px solid #D18F5F;
 }
 
 @media screen and (min-width: 992px) {
