@@ -212,12 +212,12 @@ i.fab {
 div.text-center .see-project {
     /* margin-top: 1rem; */
     /* display: inline-block; */
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--main-color);
-    border: .1rem solid rgba(0, 0, 0, 0.2);
+    /* border: .1rem solid rgba(0, 0, 0, 0.2); */
     background: transparent;
     cursor: pointer;
-    padding: .8rem 3rem;
+    padding: .2rem 1.5rem;
     position: relative;
     overflow: hidden;
     z-index: 1;
