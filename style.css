@@ -9,7 +9,7 @@ font-family: 'Poppins', sans-serif;
     --main-color: #D18F5F;
     --black: #000;
     --white: #fff;
-    --light-grey: var(--light-grey);
+    --light-grey: #CAC4C6;
     --second-color: #EDD2BF;
 }
 
@@ -104,6 +104,12 @@ span.navbar-toggler-icon {
     text-align: center;
     border: none;
     border-radius: 0;
+    background-color: #000
+}
+
+.card-title {
+    margin: 0.5rem auto;
+    color: #fff;
 }
 
 img.card-img-top {
