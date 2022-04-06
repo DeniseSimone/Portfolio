@@ -110,10 +110,11 @@ span.navbar-toggler-icon {
 .card-title {
     margin: 0.5rem auto;
     color: #fff;
-    background: brown;
     padding: 0.2rem 1rem;
-    border-radius: 40px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 img.card-img-top {
