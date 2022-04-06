@@ -5,24 +5,30 @@ font-family: 'Nunito', sans-serif;
 font-family: 'Poppins', sans-serif; 
 */
 
-
+:root {
+    --main-color: #D18F5F;
+    --black: #000;
+    --white: #fff;
+    --light-grey: var(--light-grey);
+    --second-color: #EDD2BF;
+}
 
 .nav-item a {
-    color: #fff;
+    color: var(--white);
     font-family: 'Poppins', sans-serif;
 }
 .nav-item a:hover {
-    color: white;
+    color: var(--white);
     font-weight: bold;
 }
 .nav-item i {
     font-size: .8rem;
 }
 .navbar-brand {
-    color: #D18F5F;
+    color: var(--main-color);
 }
 .navbar-brand:hover {
-    color: #D18F5F;
+    color: var(--main-color);
 }
 button.navbar-toggler:focus {
     box-shadow: none;
@@ -52,31 +58,28 @@ span.navbar-toggler-icon {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #D18F5F;
+    color: var(--main-color);
     
 }
 
 /* about section image css */
 .imageAboutPage {
     width: 80%;
-    border-radius: 150px 40px 150px 40px;
-    border: 2px solid #D18F5F;
+    border-radius: 150px 0 150px 0;
+    border: 2px solid var(--main-color);
 }
 
 @media screen and (min-width: 992px) {
     .imageAboutPage {
         margin-top: 30px;
         width: 300px;
-
     } 
 }
-
 @media screen and (max-width: 991px) {
     .imgdiv {
         margin-bottom: 20px;
     } 
 }
-
 @media (min-width: 992px) and (max-width: 1200px) {
     div.col-lg-8 {
         padding-left: 40px;
@@ -90,26 +93,32 @@ span.navbar-toggler-icon {
 #about, #portfolio {
     margin-bottom: 30px;
 }
-/* #about {
-    background-color: #EDD2BF;
-} */
 
  /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
     background-color: black;
 }
 
+/* portfolio cards */
 .card.portfolioContent {
     text-align: center;
+    border: none;
+    border-radius: 0;
 }
-a.btn {
-    background-color: #F3F1F6;
-    color: #000;
-    width: 100%;
+
+img.card-img-top {
+    border-radius: inherit;
+}
+
+/* see-project button + form button*/
+
+button[type=submit]:hover {
+    background-color: #000;
+    color: var(--white);
 }
 
 section#contact {
-  background-color: #F3F1F6;
+  background-color: var(--light-grey);
   padding: 20px 0;
   background: url('images/background1.jpg');
     background-size:cover;
@@ -120,7 +129,7 @@ section#contact {
 .form {
     width: 30%;
     min-width: 340px;
-    background-color: #EDD2BF;
+    background-color: var(--second-color);
     padding: 40px 20px;
     margin: 30px auto;
     border-radius: 3px;
@@ -155,21 +164,17 @@ input:focus::placeholder, textarea:focus::placeholder  {
   }
 
 button[type=submit] {
-    background-color: #F3F1F6;
+    background-color: var(--light-grey);
     margin-top: 10px;
     color: #000;
     width: 100%;
 }
 
-a.btn:hover, button[type=submit]:hover {
-    background-color: #000;
-    color: #fff;
-}
 
 /* footer */
 footer {
     background-color: #000;
-    color: #fff;
+    color: var(--white);
     font-family: 'Poppins', sans-serif;
     
 }
@@ -191,14 +196,49 @@ ul.socials {
 
 .footer-content a {
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 .footer-content a:hover {
-    color: white;
+    color: var(--white);
 }
 
 i.fab {
     font-size: 1.5rem;
     padding: 5px;
 }
+
+/* Button style */
+div.text-center .see-project {
+    /* margin-top: 1rem; */
+    /* display: inline-block; */
+    font-size: 1.3rem;
+    color: var(--main-color);
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    background: transparent;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+div.text-center .see-project:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    position: absolute;
+    top: 0; /* allows to be aligned w/ the top of the button */
+    left: -100%;
+    transition: .4s;
+}
+.see-project:hover.see-project:before {
+    left: 0;
+}
+
+div#banner-text {
+    visibility: hidden;
+    transition: visibility 10s;
+}
+

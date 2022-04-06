@@ -22,8 +22,9 @@
     <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
 
-<body style="background: #000;">
+<body style="background: #000;" onload="displayBannerText()">
 
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
         <div class="container">
             <a class="navbar-brand" href="#">DeniseSimone</a>
@@ -50,11 +51,11 @@
         </div>
     </nav>
 
-     <!-- main banner -->
+     <!-- MAIN BANNER -->
      <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <div id="banner-text" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
                 <h2 class="hero_title">Hi, it's me Denise</h2>
                 <p class="hero_desc">I am a frontend developer in Lisbon </p>
             </div>
@@ -62,7 +63,7 @@
         </div>
     </section>
 
-    <!-- about section-->
+    <!-- ABOUT-->
     <section id="about">
         <div class="container mt-4 pt-4" style="color: #fff;">
             <h1 class="text-center">About Me <i class="fas fa-user"></i></h1>
@@ -75,7 +76,6 @@
                     <p>Hello, I'm Denise! I am a frontend developer located in Lisbon, partially self-taught topped with a
                       Web Development bootcamp. 
                     <br>
-                    <!-- Also feel free to call me Simone, my second name <i class="fas fa-smile-beam"></i><br> -->
                     I really enjoy working with frontend and designing web pages, and I'm always ready for a new adventure.<br>
                     Want to know how I work, take a look at my <a href="#portfolio">portfolio</a>.
                     </p>
@@ -107,22 +107,19 @@
     </section>
     
 
-     <!-- portfolio section-->
+     <!-- PORTFOLIO -->
     <section id="portfolio">
         <div class="container mt-3">
             <h1 class="text-center" style="color: #fff;">Portfolio <i class="fas fa-book-open"></i></h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
+                    <h4 class="card-title">Entertainment Hub</h4>
                         <img class="card-img-top" src="images/entertainment_app.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Entertainment Hub</h4>
-                            <!-- <p class="card-text">Entertainment Hub is a entertainment app that allows the user to search for  movies and/or tv series of different genres and categories. 
-                                It allows the user to see what is trending at the moment, and info related to each movie or tv series.
-                                Entertainment Hub fetches data from a 'movies' API which is then processed and displayed to the user.</p> -->
-                            <p>Netflix like entertainment app that allows to search for movies or series from different categories/genres. Check the info related to the movie/tv series or your choice and/or watch the trailer.</p>
+                            <!-- <p>Netflix like entertainment app that allows to search for movies or series from different categories/genres. Check the info related to the movie/tv series or your choice and/or watch the trailer.</p> -->
                             <div class="text-center">
-                                <a href="https://entertainment-hub-ds.netlify.app" target="_blank" class="btn">Project</a>
+                                <a href="https://entertainment-hub-ds.netlify.app" target="_blank" class="btn see-project">Project</a>
                             </div>
                         </div>
                     </div>
@@ -130,16 +127,12 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
+                        <h4 class="card-title">Quiz App</h4>
                         <img class="card-img-top" src="images/quiz_app.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <!-- <p class="card-text">Quiz App is a simple app built with HTML, CSS and JavaScript and allows the user to play a quiz game by selecting a single option
-                                in a set of options. For each correct answer the user gets a number of points which will then be summed to a total. The user can resart the game and play as many
-                                times ah he/she wishes.
-                            </p> -->
-                            <p>A simple quiz app using Javascript.</p>
+                            <!-- <p>A simple quiz app using Javascript.</p> -->
                             <div class="text-center">
-                                <a href="https://ds-quiz-app.netlify.app/" target="_blank" class="btn">Project</a>
+                                <a href="https://ds-quiz-app.netlify.app/" target="_blank" class="btn see-project">Project</a>
                             </div>
                         </div>
                     </div>
@@ -147,14 +140,12 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
+                        <h4 class="card-title">Todo List</h4>
                         <img class="card-img-top" src="images/todo_list_app.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Todo List</h4>
-                            <!-- <p class="card-text">Todo List allows the user to create or add new tasks to a list of tasks, edit the tasks,
-                                 mark them as completed or active(in progress) and/or discard whatever tasks the user wishes.</p> -->
-                            <p>Create, add, edit or delete tasks from a todo list. Mark tasks as completed or active/in progress.</p>
+                            <!-- <p>Create, add, edit or delete tasks from a todo list. Mark tasks as completed or active/in progress.</p> -->
                             <div class="text-center">
-                                <a href="https://todo-list-ds.netlify.app" target="_blank" class="btn">Project</a>
+                                <a href="https://todo-list-ds.netlify.app" target="_blank" class="btn see-project">Project</a>
                             </div>
                         </div>
                     </div>
@@ -164,40 +155,36 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
+                        <h4 class="card-title">Weather API App</h4>
                         <img class="card-img-top" src="images/weather_app.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Weather API App</h4>
-                            <!-- <p class="card-text">Weather app collects weather related data associated with the users location and time - such as current temperature in Celsius and Fahrenheit ,
-                                 sunrise and sunset - from a weatherAPI and displays it to the user.</p> -->
-                            <p>Collect weather related data from Weather API and display it to the user. </p>
+                            <!-- <p>Collect weather related data from Weather API and display it to the user. </p> -->
                             <div class="text-center">
-                                <a href="https://dsweatherapp.netlify.app" target="_blank" class="btn">Project</a>
+                                <a href="https://dsweatherapp.netlify.app" target="_blank" class="btn see-project">Project</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
+                        <h4 class="card-title">Project</h4>
                         <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Project</h4>
-                            <p class="card-text">Description</p>
+                            <!-- <p class="card-text">Description</p> -->
                             <div class="text-center">
-                                <a href="#p" target="_blank" class="btn">Project</a>
+                                <a href="#p" target="_blank" class="btn see-project">Project</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
+                        <h4 class="card-title">Blog App</h4>
                         <img class="card-img-top" src="images/blog_app.jpg" alt="Card image" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Simple, clean design with a responsive layout.</p>
+                            <!-- <p class="card-text">Simple, clean design with a responsive layout.</p> -->
                             <div class="text-center">
-                                <a href="https://living-the-simple-life-ds.netlify.app" target="_blank" class="btn">Project</a>
+                                <a href="https://living-the-simple-life-ds.netlify.app" target="_blank" class="btn see-project">Project</a>
                             </div>
                         </div>
                     </div>
@@ -205,6 +192,7 @@
             </div>
     </section>
 
+    <!-- FORM -->
     <section id="contact">
         <div class="container mt-3">
             <h1 class="text-center">Get in Touch <i class="fas fa-user-friends"></i></h1>
@@ -269,8 +257,7 @@
             }
         }
 
-        // form
-
+        // form - handles what happens to the form when form is submitted
         var form = document.getElementById("my-form");
         
         async function handleSubmit(event) {
@@ -302,6 +289,7 @@
         }
         form.addEventListener("submit", handleSubmit)
     </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
