@@ -223,9 +223,9 @@ i.fab {
 div.text-center .see-project {
     /* margin-top: 1rem; */
     /* display: inline-block; */
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #fff;
-    /* border: .1rem solid rgba(0, 0, 0, 0.2); */
+    border: .1rem solid rgba(0, 0, 0, 0.2);
     background: transparent;
     cursor: pointer;
     padding: .2rem 1.5rem;
