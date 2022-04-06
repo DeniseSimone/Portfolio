@@ -110,6 +110,9 @@ span.navbar-toggler-icon {
 .card-title {
     margin: 0.5rem auto;
     color: #fff;
+    background: brown;
+    padding: 0.2rem 1rem;
+    border-radius: 40px;
 }
 
 img.card-img-top {
