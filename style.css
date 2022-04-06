@@ -119,6 +119,8 @@ span.navbar-toggler-icon {
 
 img.card-img-top {
     border-radius: inherit;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* see-project button + form button*/
